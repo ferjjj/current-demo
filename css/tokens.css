@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Design tokens — see SPEC.md §4. Values are estimated from "Web draft.png".
+   ========================================================================== */
+:root {
+  /* Ink */
+  --ink-900: #14232f;
+  --ink-700: #2c3e4c;
+  --ink-600: #4a5b68;
+  --ink-400: #7c8d99;
+
+  /* Teal */
+  --teal-900: #0b4f5e;
+  --teal-800: #0c5c6c;
+  --teal-700: #0e6b7c;
+  --teal-500: #1b9aaa;
+  --teal-300: #6cc5cf;
+  --teal-100: #ddf1f5;
+
+  /* Sky / surfaces */
+  --page: #f4fbfd;
+  --sky-50: #f2fafc;
+  --sky-100: #e6f4f8;
+  --sky-200: #d3ecf3;
+  --bar: #2a3b4b;
+  --white: #fff;
+  --border: #d5e3e9;
+
+  /* Orange (CTA) — slightly deepened vs. mockup for better white-text contrast */
+  --orange-300: #ffa94d;
+  --orange-500: #f47b16;
+  --orange-600: #e5640a;
+  --orange-700: #cf5808;
+  --star: #f5a623;
+
+  /* Status */
+  --error: #c62828;
+  --success: #1e8e5a;
+
+  /* Gradients */
+  --grad-cta: linear-gradient(180deg, #ff9a35 0%, #f47b16 48%, #d9600a 100%);
+  --grad-cta-hover: linear-gradient(180deg, #ffaa4d 0%, #ff8620 48%, #e66a0e 100%);
+  --grad-banner: linear-gradient(110deg, #0b4f5e 0%, #0e6b7c 60%, #1b8596 100%);
+  --grad-quote: linear-gradient(180deg, #1b9aaa 0%, #0e6b7c 38%, #0b4f5e 100%);
+
+  /* Type */
+  --font-head: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Shape */
+  --r-pill: 999px;
+  --r-card: 28px;
+  --r-panel: 36px;
+  --r-input: 12px;
+
+  /* Shadows */
+  --shadow-card: 0 18px 40px -14px rgba(14, 107, 124, 0.24), 0 2px 6px rgba(20, 35, 47, 0.06);
+  --shadow-card-hover: 0 28px 56px -16px rgba(14, 107, 124, 0.38), 0 4px 10px rgba(20, 35, 47, 0.08);
+  --shadow-cta: 0 10px 24px -6px rgba(244, 123, 22, 0.55);
+  --shadow-form: 0 30px 60px -20px rgba(7, 50, 60, 0.5);
+
+  /* Layout */
+  --container: 1440px;
+  --gutter: clamp(16px, 4vw, 72px);
+  --header-h: 112px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 200ms;
+  --dur-base: 450ms;
+  --dur-slow: 800ms;
+  --stagger: 90ms;
+}
+
+@media (max-width: 1023px) {
+  :root { --header-h: 76px; }
+}
